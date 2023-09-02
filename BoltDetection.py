@@ -39,7 +39,7 @@ omv.disable_fb(True)
 
 network_if = network.WLAN(network.STA_IF)
 network_if.active(True)
-network_if.connect('DESKTOP-A07ERSR', '00000000')
+network_if.connect('DESKTOP-A07ERSR', '00000000') #更換成自己的WiFi
 while not network_if.isconnected():
     print("Trying to connect. Note this may take a while...")
     time.sleep_ms(1000)
